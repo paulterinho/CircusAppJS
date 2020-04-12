@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <head>
+    <!-- Your CSS -->
+    <link rel="stylesheet" type="text/css" href="css/circusAppDom.css">
+    
+    <!-- This is where your Data Models and GUI (OOP) will go. -->
+    <script type="text/javascript" src="js/circusAppDom.js"></script>
+    <script type="text/javascript" src="js/circusAppDomGui.js"></script>
+
+    <title>Circus Application</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.gif">
+
+  </head>
+    
+  <body>
+
+    <div id="header">
+
+      <h1>Circus App</h1>
+      <h4>Just a small example to teach students about creating apps, polymorphism, and event handling in JS.</h4>
+
+      <!-- NOTE: In order to trigger javascript, remember to use the 'onclick' HTML attribute. -->
+      <!-- NOTE: The '#' symbol in the "href" keeps the HTML page from refreshing so we can 
+            maintain the same state of our single page javascript applicatoin.  -->
+      <ul  id="nav">
+        
+        <!-- Add button, this will add a new animal to the group -->
+        <li><a href="#" onclick="circusapp.app.addAnimal()">Add</a></li>
+
+        <!-- Sing button, this will iterate through the list of 
+         animals and get them to do their own special song.-->
+        <li><a href="#" onclick="circusapp.app.groupSing()">Group Sing</a></li>
+
+        <!-- Trick button, this will iterate through the list of 
+         animals and get them to do their own special trick.
+
+        NOTE: use a switch statement for executing this custom method.
+        -->
+        <li><a href="#" onclick="circusapp.app.groupTricks()">Group Tricks</a></li>
+      </ul>
+
+    </div>
+    
+    <!-- Use the document.getElementById to add html to this page like: 
+        var el = document.getElementById("log");
+        el.innerHTML += "<br/>Test"; -->
+    <ul id="animalList" class="panel">
+      <li><h4>List of animals</h4></li>
+    </ul>
+
+    <!-- keep track of what the user is doing here, 
+       like when the user clicks the 'add' button, log it -->
+    <ul id="log" class="panel" class="panel">
+      <li><h4>Application Log</h4></li>
+    </ul>
+
+    <div id="footer">
+
+    </div>
+
+    
+  </body>
+</html>

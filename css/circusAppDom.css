@@ -1,0 +1,69 @@
+
+.panel{
+	list-style-type: none;
+}
+
+#header
+{
+	/* no styles yet, you can make your own */
+}
+
+#animalList
+{
+	float: left;
+	width: 20%;
+	margin: 0;
+	min-height: 400px;
+	background-color: #F0F0F0;
+	padding: 5px;
+	overflow:auto;
+}
+
+/* style the li elements inside of the animal list */
+#animalList li
+{
+	vertical-align: middle;
+}
+
+#log{
+	float: left;
+	margin: 0px;
+	width: 77%;
+	min-height: 400px;
+	background-color: #F0F0F0;
+	padding: 5px;
+}
+
+#footer
+{
+	clear: both;
+	height: 50px;
+	background-color: #666;
+	margin-bottom: 10px;
+}
+
+/* CSS Navigation Styling from http://www.cssnewbie.com/super-simple-horizontal-navigation-bar/#.Ui8AVH-TLZY */
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; }
+
+#nav li {
+	float: left; }
+
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+	border-right: 1px solid #ccc; }
+
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff; }
